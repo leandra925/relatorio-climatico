@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo e Qualidade do Ar</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+            integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Previsão do Tempo e Qualidade do Ar</h1>
+        </header>
+        
+   
+        <section id="localidade">
+            <label for="estado">Escolha um Estado:</label>
+            <select id="estado" onchange="carregarCidades()">
+                <option value="">Selecione um Estado</option>
+
+            </select>
+
+            <label for="cidade">Escolha uma Cidade:</label>
+            <select id="cidade" onchange="atualizarPrevisao()">
+                <option value="">Selecione uma Cidade</option>
+
+            </select>
+        </section>
+
+        <section id="dados">
+            <p id="data-coleta"></p>
+            <p id="paragrafo-informativo"></p>
+            <h2>Qualidade do Ar</h2>
+            <p id="qualidade-ar"></p>
+
+            <h2>Previsão do Tempo</h2>
+            <table id="previsao">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Condição</th>
+                        <th>Chuva (%)</th>
+                        <th>Temperatura (°C)</th>
+                        <th>Sensação (°C)</th>
+                        <th>Umidade (%)</th>
+                        <th>Vento (km/h)</th>
+                    </tr>
+                </thead>
+                <tbody>
+       
+                </tbody>
+            </table>
+
+            <button id="salvar" onclick="salvarPDF(document.body, 'previsao_tempo')">Salvar PDF</button>
+        </section>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

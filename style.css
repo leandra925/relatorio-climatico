@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ffb6c1;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#paragrafo-informativo {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#localidade {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ffb6c1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #ffe4e1;
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    border-color: #ff1493;
+    background-color: #fff0f5;
+    outline: none;
+}
+
+#dados {
+    background-color: #fff0f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#qualidade-ar {
+    background-color: #fce4ec;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#qualidade-ar h2 {
+    font-size: 1.8rem;
+    color: #ff1493;
+}
+
+#indicador-ar {
+    font-size: 1.2rem;
+    color: #ff1493;
+}
+
+#previsao h2 {
+    font-size: 2rem;
+    color: #ff1493;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+th {
+    background-color: #ffb6c1;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffe4e1;
+}
+
+tr:nth-child(even) td {
+    background-color: #fff0f5;
+}
+
+tr:hover td {
+    background-color: #ff1493;
+    color: #fff;
+}
+
+button {
+    background-color: #ff69b4;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    select, button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
